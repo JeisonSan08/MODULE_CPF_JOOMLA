@@ -85,11 +85,7 @@ Configuração no módulo:
 - cep: cep_usuario  
 - nome: 1
 
----
 
-## 👨‍💻 Desenvolvedor
-
-Módulo adaptado por **Jeison Ferreira** com ajustes adicionais por **ChatGPT (OpenAI)**.
 
 ---
 
