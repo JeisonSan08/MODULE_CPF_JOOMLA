@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ * @copyright	Copyright © 2021 - All rights reserved.
+ * @license		GNU General Public License v2.0
+ * @generator	http://xdsoft/joomla-module-generator/
+ */
+-->
+<extension type="module" method="upgrade" client="site">
+	<name>MOD_MASCARA_CPF</name>
+	<creationDate>Oct 2021</creationDate>
+	<author>jeison ferreira</author>
+	<authorEmail>jeisonsan@gmail.com</authorEmail>
+	<authorUrl>https://www.jeisonsites.com.br</authorUrl>
+	<copyright>Copyright © 2021 - All rights reserved.</copyright>
+	<license>GNU General Public License v2.0</license>
+	<version>0.0.3</version>
+	<description>
+<![CDATA[
+<div style="padding:1%;background:#fff;color:#444;font-size:14px;text-align:center;border: 2px solid #444;">
+<p>
+<img src="../modules/mod_mascara_cpf/assets/images/logo.png">
+</p><h1 style="font-size:26px;color: #fff;background: #aa221f;padding: 1%;">Máscaras (CPF)</h1>
+<h1 style="font-size:26px;color: #fff;background: #da9100;padding: 1%;">Version 1.0.3</h1>
+<h2>Extensões Webs</h2>
+<p>
+Desenvolvimento para Joomla e Wordpress
+</p>
+
+<p style="margin-bottom:20px;"><br><br>
+<a class="btn btn-info" target="_blank" href="http://blog.websagencia.com.br/">Visite nosso blog</a>
+</p>
+<hr>
+</div>
+
+]]>	
+
+	</description>
+	<files>
+		<filename module="mod_mascara_cpf">mod_mascara_cpf.php</filename>
+		<filename>mod_mascara_cpf.xml</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset
+				name="advanced">
+				<field
+					name="nome"
+					type="list"
+					default="1"
+					label="Como deseja usar?"
+					>
+					<option
+						value="1">Pelo nome dos campos</option>
+					<option
+						value="0">Pelo ID dos campos</option>
+				</field>
+				<field
+					name="jQuery"
+					type="list"
+					default="1"
+					label="Usar jQuery Externo?"
+					>
+					<option
+						value="1">Não</option>
+					<option
+						value="0">Sim</option>
+				</field>
+
+				<field
+					name="tipo"
+					type="list"
+					default="1"
+					label="VARIAVEL"
+					description="Escolhe o modelo de variavel">
+					<option
+						value="1">jQuery</option>
+					<option
+						value="0">$</option>
+				</field>
+
+				<field
+					name="campo1"
+					type="text"					
+					label="NOME DO CAMPO CPF"
+					 />
+			<field 
+				name="tel"
+					type="text"					
+					label="NOME DO CAMPO TELEFONE"
+				 />
+
+				 <field
+					name="cel"
+					type="text"					
+					label="NOME DO CAMPO CELULAR"
+				 />
+
+			 <field
+					name="cep"
+					type="text"					
+					label="NOME DO CAMPO CEP"
+				 />
+				  <field
+					name="data"
+					type="text"					
+					label="NOME DO CAMPO DATA"
+				 />
+             <field
+					name="nota"
+					type="note"					
+					label="CAMPOS ADICIONAIS PARA CPF"
+				 />
+           <field
+					name="campo2"
+					type="text"					
+					label="NOME DO CAMPO"
+				 />
+				<field
+					name="campo3"
+					type="text"					
+					label="NOME  DO CAMPO"
+					 />
+
+				<field
+					name="campo4"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+				<field
+					name="campo5"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+				<field
+					name="campo6"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+				<field
+					name="campo7"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+				<field
+					name="campo8"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+
+				<field
+					name="campo9"
+					type="text"					
+					label="NOME  DO CAMPO" />
+
+				<field
+					name="campo10"
+					type="text"					
+					label="NOME  DO CAMPO" />	
+
+
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		
+				
+
+						
+</fields>
+
+<!--
+########################################################################################
+The following are a list of all the different types of fields you can add to this file
+They are here for copy pasting - neat eh?
+Full list https://docs.joomla.org/Standard_form_field_types
+########################################################################################
+
+https://docs.joomla.org/Calendar_form_field_type
+<field name="mycalendar" type="calendar" default="5-10-2008" label="Select a date" description="" format="%d-%m-%Y" />
+
+https://docs.joomla.org/Category_form_field_type
+<field name="mycategory" type="category" label="Select a category" description="" section="3" />
+
+https://docs.joomla.org/Editor_form_field_type
+<field name="myeditor" type="editors" default="none" label="Select an editor" />
+
+https://docs.joomla.org/Filelist_form_field_type
+<field name="myfile" type="filelist" default="" label="Select a file" description="" directory="administrator" filter="" exclude="" stripext="" />
+
+https://docs.joomla.org/Folderlist_form_field_type
+<field name="myfolder" type="folderlist" default="" label="Select a folder" directory="administrator" filter="" exclude="" stripext="" />
+
+https://docs.joomla.org/Helpsite_form_field_type
+<field name="myhelpsite" type="helpsites" default="" label="Select a help site" description="" />
+
+https://docs.joomla.org/Hidden_form_field_type
+<field name="mysecretvariable" type="hidden" default="" />
+
+https://docs.joomla.org/Imagelist_form_field_type
+<field name="myimage" type="imagelist" default="" label="Select an image" description="" directory="" exclude="" stripext="" />
+
+https://docs.joomla.org/Language_form_field_type
+<field name="mylanguage" type="languages" client="site" default="en-GB" label="Select a language" description="" />
+
+https://docs.joomla.org/List_form_field_type
+<field name="mylistvalue" type="list" default="" label="Select an option" description="">
+  <option value="0">Option 1</option>
+  <option value="1">Option 2</option>
+</field>
+
+https://docs.joomla.org/Menu_form_field_type
+<field name="mymenu" type="menu" default="mainmenu" label="Select a menu" description="Select a menu" />
+
+https://docs.joomla.org/Menuitem_form_field_type
+<field name="mymenuitem" type="menuitem" default="45" label="Select a menu item" description="Select a menu item" />
+
+https://docs.joomla.org/Password_form_field_type
+<field name="mypassword" type="password" default="secret" label="Enter a password" description="" size="5" />
+
+https://docs.joomla.org/Radio_form_field_type
+<field name="myradiovalue" type="radio" default="0" label="Select an option" description="" class="btn-group btn-group-yesno">
+  <option value="0">JYES</option>
+  <option value="1">JNO</option>
+</field>
+
+https://docs.joomla.org/Spacer_form_field_type
+<field type="spacer" default="&lt;b&gt;Advanced parameters&lt;/b&gt;" />
+<field type="spacer" name="myspacer" hr="true" />
+
+https://docs.joomla.org/SQL_form_field_type
+<field name="myfield" type="sql" default="10" label="Select an article" query="SELECT id, title FROM #__content" key_field="id" value_field="title" />
+
+https://docs.joomla.org/Text_form_field_type
+<field name="mytextvalue" type="text" default="Some text" label="Enter some text" description="" size="10" />
+
+https://docs.joomla.org/Textarea_form_field_type
+<field name="mytextarea" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" />
+
+https://docs.joomla.org/Timezone_form_field_type
+<field name="mytimezone" type="timezones" default="-10" label="Select a timezone" description="" />
+
+https://docs.joomla.org/Usergroup_form_field_type
+<field name="myusergroups" type="usergroup" default="" label="Select a user group" description="" />
+-->
+	</config> 
+	<languages folder="language">
+		<language tag="pt-BR">pt-BR/pt-BR.mod_mascara_cpf.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_mascara_cpf.ini</language>
+	</languages>
+</extension>
